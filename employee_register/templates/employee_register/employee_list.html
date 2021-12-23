@@ -1,5 +1,28 @@
 {% extends "employee_register/base.html" %} 
 
 {% block content %}
-<p> We'll show list of employee from the tables</p>
+
+
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Full Name</td>
+             <td>Mobile</td>
+             <td>Position</td>
+             <td>Employee Code</td>
+        </tr>
+    </thead>
+    <tbody>
+       {% for employee in employee_list %}
+            <tr>
+            <td>{{employee.fullname}}</td>
+            <td>{{employee.mobile}}</td>
+            <td>{{employee.position}}</td>
+            <td>{{employee.emp_code}}</td>
+
+            </tr>
+       {% endfor %}
+    </tbody>
+</table>
+
 {% endblock content %}
