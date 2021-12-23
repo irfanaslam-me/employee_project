@@ -1,5 +1,5 @@
 from django import forms
-from models import Employee
+from .models import Employee
 
 
 class EmployeeForm(forms.ModelForm):
