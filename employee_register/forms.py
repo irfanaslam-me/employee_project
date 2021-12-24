@@ -8,7 +8,7 @@ class EmployeeForm(forms.ModelForm):
         fields = ('fullname', 'mobile', 'emp_code', 'position')
         labels = {
             'fullname': 'Full Name',
-            'position': 'Desigination',
+            'position': 'Designation',
             'emp_code': 'Employee Code',
             'mobile': 'Mobile Number'
         }
